@@ -9,8 +9,10 @@
 	**/
 	const getPrime = n => {
 
+		//getPrime for numbers alone
 		if (typeof(n) == "number"){
 
+			//getPrime for only numbers greater than 1
 			if(n < 2){
 
 				return undefined;
