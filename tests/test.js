@@ -23,6 +23,12 @@ describe("PrimeGenerator", function(){
 
 		});
 
+		it("should return [ 2 ] as a result for getprime(7)", function(){
+
+			assert.deepEqual(myApp.getPrime(7), [ 2, 3, 5, 7 ]);
+
+		});
+
 	});
 
 	describe("handle invalid input", function(){
@@ -39,12 +45,6 @@ describe("PrimeGenerator", function(){
 
 		});
 
-		it("should return undefined as a result for getPrime($)", function(){
-
-			assert.deepEqual(myApp.getPrime($), undefined);
-
-		});
-
 	});
 
 	describe("handle negative input", function(){
@@ -55,6 +55,12 @@ describe("PrimeGenerator", function(){
 
 		});
 
+		it("should return undefined as a result for getPrime(-500)", function(){
+
+			assert.deepEqual(myApp.getPrime(-500), undefined);
+
+		});
+
 	});
 
 	describe("handle string input", function(){
@@ -62,6 +68,12 @@ describe("PrimeGenerator", function(){
 		it("should return undefined as a result for getPrime('five')", function(){
 
 			assert.deepEqual(myApp.getPrime('five'), undefined);
+
+		});
+
+		it("should return undefined as a result for getPrime('5')", function(){
+
+			assert.deepEqual(myApp.getPrime('5'), undefined);
 
 		});
 
