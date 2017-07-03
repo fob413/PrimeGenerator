@@ -29,19 +29,19 @@ describe("PrimeGenerator", function(){
 
 		it("should return undefined as a result for getPrime(0)", function(){
 
-			assert.deepEqual(myApp.getPrime(0), "undefined");
+			assert.deepEqual(myApp.getPrime(0), undefined);
 
 		});
 
 		it("should return undefined as a result for getPrime(1)", function(){
 
-			assert.deepEqual(myApp.getPrime(1), "undefined");
+			assert.deepEqual(myApp.getPrime(1), undefined);
 
 		});
 
 		it("should return undefined as a result for getPrime($)", function(){
 
-			assert.deepEqual(myApp.getPrime($), "undefined");
+			assert.deepEqual(myApp.getPrime($), undefined);
 
 		});
 
@@ -51,7 +51,7 @@ describe("PrimeGenerator", function(){
 
 		it("should return undefined as a result for getPrime(-5)", function(){
 
-			assert.deepEqual(myApp.getPrime(-5), "undefined");
+			assert.deepEqual(myApp.getPrime(-5), undefined);
 
 		});
 
@@ -61,7 +61,7 @@ describe("PrimeGenerator", function(){
 
 		it("should return undefined as a result for getPrime('five')", function(){
 
-			assert.deepEqual(myApp.getPrime('five'), "undefined");
+			assert.deepEqual(myApp.getPrime('five'), undefined);
 
 		});
 
