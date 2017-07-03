@@ -1,0 +1,22 @@
+{
+  "name": "primegenerator",
+  "version": "1.0.0",
+  "description": "application generates prime numbers",
+  "main": "src/main.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "mocha tests/test.js"
+  },
+  "keywords": [
+    "PRIME",
+    "GENERATOR"
+  ],
+  "author": "Funsho Oluyole-Balogun",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.0.2",
+    "mocha": "^3.4.2"
+  }
+}
