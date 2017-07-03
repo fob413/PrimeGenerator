@@ -9,26 +9,35 @@
 	**/
 	const getPrime = n => {
 
-		if(n < 2){
+		if (typeof(n) == "number"){
 
-			console.log('Your value should be a positive integer greater than 1');
+			if(n < 2){
 
-		}else{
+				return undefined;
 
-			let primeNumbers = [];
+			}else{
 
-			for(let i = 2; i <= n; i++ ){
-				
-				if (isPrime(i)){
+				let primeNumbers = [];
 
-					primeNumbers.push(i);
+				for(let i = 2; i <= n; i++ ){
+					
+					if (isPrime(i)){
+
+						primeNumbers.push(i);
+
+					}
 
 				}
 
+				return primeNumbers;
+				
+
 			}
 
-			return primeNumbers;
 			
+		}else{
+
+			return undefined;
 
 		}
 	}
